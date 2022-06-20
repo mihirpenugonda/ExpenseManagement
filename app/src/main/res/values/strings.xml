@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">ExpenseManagement</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_username">username</string>
+    <string name="text_password">password</string>
+    <string name="login">login</string>
+    <string name="text_login_finance_logo">login_finance_logo</string>
+    <string name="login_register_cta"><u>not a user click here to register</u></string>
+    <string name="text_name">name</string>
+    <string name="text_email">email</string>
+    <string name="text_match_password">match password</string>
+    <string name="text_register">register</string>
+    <string name="text_expense">expense</string>
+    <string name="text_friends">friends</string>
+    <string name="text_add">add</string>
+    <string name="text_total_balance">total balance</string>
+    <string name="text_expenses">expenses</string>
+    <string name="text_total_expense">total expense</string>
+    <string name="text_total_income">total income</string>
+    <string name="text_transactions">transactions</string>
+    <string name="text_placeholder">placeholder</string>
+    <string name="text_expense_logo">expense_logo</string>
+    <string name="text_income_logo">income_logo</string>
+    <string name="text_title">title</string>
+    <string name="text_description">description</string>
+    <string name="text_expense_amount">amount</string>
+    <string name="text_date">date</string>
+    <string name="text_add_transaction">add transaction</string>
+    <string name="text_income">income</string>
+    <string name="text_group">group</string>
+    <string name="text_amount">amount</string>
+    <string name="text_add_users">add users</string>
+    <string name="text_add_split">add split</string>
+    <string name="text_create_split">create split</string>
+    <string name="text_create_transaction">create transaction</string>
+    <string name="title_activity_transaction_management">transactionManagement</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="text_all_transactions">all transactions</string>
+    <string name="text_category">category</string>
+    <string name="text_overall">overall</string>
+    <string name="text_search">search</string>
+    <string name="text_rv_transaction_logo">rv transaction logo</string>
+    <string name="text_search_user">search user</string>
+    <string name="text_log_out">log out</string>
+    <string name="text_transaction">transaction</string>
+    <string name="text_update">update</string>
+    <string name="title_activity_friend_management">FriendManagement</string>
+    <string name="text_settle_up">settle up</string>
+    <string name="text_to_settle_up">to settle up</string>
+    <string name="text_border_bottom">border bottom</string>
+    <string name="click_to_see_all_transactions"><![CDATA[click to see all transactions ->]]></string>
+</resources>

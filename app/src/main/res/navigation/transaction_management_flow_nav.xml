@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/transaction_management_flow_nav"
+    app:startDestination="@id/allTransactionFragment">
+
+    <fragment
+        android:id="@+id/allTransactionFragment"
+        android:name="com.mhirrr.expensemanagement.transactionManagementModule.presentation.transactionManagement.allTransactions.AllTransactionsFragment"
+        android:label="all transaction fragment"
+        tools:layout="@layout/fragment_all_transactions">
+
+
+        <action
+            android:id="@+id/action_allTransactionFragment_to_transactionFragment"
+            app:destination="@id/transactionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/transactionFragment"
+        android:name="com.mhirrr.expensemanagement.transactionManagementModule.presentation.transactionManagement.transaction.TransactionFragment"
+        android:label="transaction fragment"
+        tools:layout="@layout/fragment_transaction">
+
+        <argument
+            android:name="t_id"
+            app:argType="string" />
+    </fragment>
+
+</navigation>

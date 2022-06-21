@@ -5,8 +5,16 @@
       <map>
         <entry key="app/src/main/res/drawable-v24/finance_logo.xml" value="0.127" />
         <entry key="app/src/main/res/layout/activity_add_transaction.xml" value="0.20557454427083333" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.11614583333333334" />
+        <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.11614583333333334" />
+        <entry key="app/src/main/res/layout/activity_transaction_management.xml" value="0.11614583333333334" />
+        <entry key="app/src/main/res/layout/activity_transactions_dashboard.xml" value="0.23824786324786323" />
+        <entry key="app/src/main/res/layout/fragment_all_transactions.xml" value="0.11614583333333334" />
         <entry key="app/src/main/res/layout/fragment_transaction.xml" value="0.11614583333333334" />
         <entry key="app/src/main/res/layout/fragment_transactions_dashboard.xml" value="0.28152516682942713" />
+        <entry key="app/src/main/res/layout/rv_dropdown_item.xml" value="0.11614583333333334" />
+        <entry key="app/src/main/res/layout/rv_pie_chart_legend_item.xml" value="0.11614583333333334" />
+        <entry key="app/src/main/res/layout/rv_transaction_card.xml" value="0.5331273396809897" />
       </map>
     </option>
   </component>

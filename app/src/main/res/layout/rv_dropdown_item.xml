@@ -4,6 +4,7 @@
     android:layout_height="wrap_content"
     android:ellipsize="end"
     android:maxLines="1"
+    android:background="@color/surface"
     android:padding="16dp"
     android:text="@string/text_placeholder"
     android:textAppearance="?attr/textAppearanceSubtitle1"

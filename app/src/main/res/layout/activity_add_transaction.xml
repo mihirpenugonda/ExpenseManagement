@@ -7,6 +7,7 @@
     tools:context=".transactionManagementModule.presentation.addTransaction.AddTransactionActivity">
 
     <TextView
+        android:textColor="@color/white"
         android:id="@+id/add_transaction_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -27,10 +28,13 @@
         app:layout_constraintTop_toBottomOf="@id/add_transaction_text">
 
         <com.google.android.material.tabs.TabLayout
+            android:backgroundTint="@color/surface"
             android:id="@+id/add_transaction_tab"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintEnd_toEndOf="parent"
+            app:tabTextColor="@color/white"
+            app:tabSelectedTextColor="@color/blue_500"
             app:layout_constraintStart_toStartOf="parent"
             app:tabIndicatorFullWidth="true"
             tools:layout_editor_absoluteY="64dp">
@@ -116,7 +120,7 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/add_transaction_category_parent"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
         android:layout_width="300dp"
         android:layout_height="80dp"
         android:layout_marginTop="4dp"
@@ -130,6 +134,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:enabled="true"
+            android:backgroundTint="@color/white"
             android:hint="@string/text_category"
             android:inputType="none"
             android:textColorHint="@color/white"
@@ -141,7 +146,7 @@
         android:layout_width="wrap_content"
         android:layout_height="48dp"
         android:text="@string/text_create_transaction"
-        android:textSize="16sp"
+        android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/add_transaction_category_parent" />

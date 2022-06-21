@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:text="@string/text_transaction"
+        android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -35,6 +36,9 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:tabIndicatorFullWidth="true"
+            android:background="@color/surface"
+            app:tabSelectedTextColor="@color/blue_500"
+            app:tabTextColor="@color/white"
             tools:layout_editor_absoluteY="64dp">
 
             <com.google.android.material.tabs.TabItem
@@ -118,7 +122,7 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/transaction_category_parent"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
         android:layout_width="300dp"
         android:layout_height="80dp"
         android:layout_marginTop="4dp"
@@ -133,6 +137,7 @@
             android:layout_height="wrap_content"
             android:enabled="true"
             android:hint="@string/text_category"
+            android:backgroundTint="@color/white"
             android:inputType="none"
             android:textColorHint="@color/white"
             android:textSize="16sp" />

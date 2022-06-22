@@ -16,7 +16,7 @@ interface TransactionModelDao {
     fun getAllTransactionsFlow(): Flow<List<TransactionModel>>
 
     @Query("SELECT * FROM `transactionModel` WHERE title LIKE '%'||:search||'%' OR description LIKE '%'||:search||'%' ORDER BY date DESC")
-    fun getAllTransactionsBySearch(search: String): List<TransactionModel>
+    suspend fun getAllTransactionsBySearch(search: String): List<TransactionModel>
 
     @Query("SELECT * FROM `transactionModel` WHERE  t_id IN (:id)")
     suspend fun getTransactionById(id: Long): TransactionModel?

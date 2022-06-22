@@ -20,7 +20,7 @@ interface TransactionModelDao {
     fun getAllTransactionsBySearch(search: String): List<TransactionModel>
 
     @Query("SELECT * FROM `transactionModel` WHERE  t_id IN (:id)")
-    fun getTransactionById(id: Long): TransactionModel?
+    suspend fun getTransactionById(id: Long): TransactionModel?
 
     @Query("DELETE FROM `transactionModel` WHERE t_id IN (:id)")
     fun deleteTransaction(id: Long)

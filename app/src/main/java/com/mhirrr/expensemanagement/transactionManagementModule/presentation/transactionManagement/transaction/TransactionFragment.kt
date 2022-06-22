@@ -12,7 +12,6 @@ import androidx.annotation.RequiresApi
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
 import com.mhirrr.expensemanagement.transactionManagementModule.data.local.TransactionModel
-import com.developer.finance_refactored.transactionManagementModule.presentation.transactionManagement.transaction.TransactionViewModel
 import com.mhirrr.expensemanagement.utils.dataUtils.DateTimeConverters
 import com.mhirrr.expensemanagement.utils.widgetUtils.BaseFragment
 import com.mhirrr.expensemanagement.utils.widgetUtils.DatePickerExtender
@@ -20,6 +19,7 @@ import com.mhirrr.expensemanagement.utils.Constants
 import com.mhirrr.expensemanagement.R
 import com.mhirrr.expensemanagement.databinding.FragmentTransactionBinding
 import dagger.hilt.android.AndroidEntryPoint
+import kotlinx.coroutines.launch
 
 @AndroidEntryPoint
 class TransactionFragment : BaseFragment<FragmentTransactionBinding>() {
@@ -51,7 +51,9 @@ class TransactionFragment : BaseFragment<FragmentTransactionBinding>() {
         binding.transactionCategory.isSelected = true
         binding.transactionCategory.setAdapter(categoryAdapter)
 
-        transactionViewModel.getTransaction(id!!)
+        lifecycleScope.launch {
+            transactionViewModel.getTransaction(id!!)
+        }
 
         binding.transactionCategory.setOnClickListener {
             (it as AutoCompleteTextView).showDropdown(categoryAdapter)
@@ -106,9 +108,10 @@ class TransactionFragment : BaseFragment<FragmentTransactionBinding>() {
             transaction.id
         )
 
-        transactionViewModel.insertTransaction(newTransaction)
+        lifecycleScope.launch {
+            transactionViewModel.insertTransaction(newTransaction)
+        }
     }
-
 }
 
 fun AutoCompleteTextView.showDropdown(adapter: ArrayAdapter<String>?) {

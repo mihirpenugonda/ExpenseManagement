@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/allTransactionFragment"
-        android:name="com.mhirrr.expensemanagement.transactionManagementModule.presentation.transactionManagement.allTransactions.AllTransactionsFragment"
+        android:name="com.chaitrika.expensemanagement.transactionManagementModule.presentation.transactionManagement.allTransactions.AllTransactionsFragment"
         android:label="all transaction fragment"
         tools:layout="@layout/fragment_all_transactions">
 
@@ -18,7 +18,7 @@
     </fragment>
     <fragment
         android:id="@+id/transactionFragment"
-        android:name="com.mhirrr.expensemanagement.transactionManagementModule.presentation.transactionManagement.transaction.TransactionFragment"
+        android:name="com.chaitrika.expensemanagement.transactionManagementModule.presentation.transactionManagement.transaction.TransactionFragment"
         android:label="transaction fragment"
         tools:layout="@layout/fragment_transaction">
 

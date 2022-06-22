@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.mhirrr.expensemanagement">
+    package="com.chaitrika.expensemanagement">
 
     <application
         android:name=".ExpenseManagementApplication"
@@ -14,26 +14,22 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ExpenseManagement"
         tools:targetApi="31">
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
 
-        </activity>
         <activity
-            android:name=".transactionManagementModule.presentation.transactionManagement.TransactionManagementActivity"
+            android:name="com.chaitrika.expensemanagement.transactionManagementModule.presentation.transactionManagement.TransactionManagementActivity"
             android:exported="false"
             android:label="@string/title_activity_transaction_management"
             android:theme="@style/Theme.ExpenseManagement.NoActionBar" >
         </activity>
 
         <activity
-            android:name=".transactionManagementModule.presentation.addTransaction.AddTransactionActivity"
+            android:name="com.chaitrika.expensemanagement.transactionManagementModule.presentation.addTransaction.AddTransactionActivity"
             android:exported="true">
 
         </activity>
 
         <activity
-            android:name=".transactionManagementModule.presentation.transactionsDashboard.TransactionsDashboardActivity"
+            android:name="com.chaitrika.expensemanagement.transactionManagementModule.presentation.transactionsDashboard.TransactionsDashboardActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
